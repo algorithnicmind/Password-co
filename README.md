@@ -56,10 +56,12 @@ sequenceDiagram
 ## ⚙️ Getting Started
 
 ### 1. Prerequisites
+
 - Python 3.10+
 - Git
 
 ### 2. Setup Backend
+
 ```bash
 cd backend
 python -m venv .venv
@@ -69,10 +71,13 @@ python main.py
 ```
 
 ### 3. Setup Frontend
+
 Simply open `frontend/index.html` in your browser, or use the VS Code **Live Server** extension for the best experience.
 
 ## 🔒 Security
+
 ShieldGen follows the principle of "Zero Knowledge." All generation logic occurs on the server using cryptographically secure random number generators (CSPRNG), and the data is wiped from memory as soon as the response is sent. No databases or logs are used to store user input.
 
 ## 📄 License
+
 This project is open-source and available under the [MIT License](LICENSE).
