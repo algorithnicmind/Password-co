@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldGen | Secure Password Utility</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shield<span>Gen</span></h1>
+            <p>Enterprise-grade security, locally powered.</p>
+        </header>
+
+        <main class="glass-card">
+            <section class="display-section">
+                <div class="password-display">
+                    <input type="text" id="passwordInput" readonly placeholder="Click Generate...">
+                    <button id="copyBtn" title="Copy to Clipboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    </button>
+                </div>
+                <div id="strengthMeter" class="strength-meter">
+                    <div id="strengthBar" class="bar"></div>
+                    <span id="strengthText">Strength: -</span>
+                </div>
+            </section>
+
+            <section class="controls-section">
+                <div class="control-group">
+                    <label for="lengthRange">Length: <span id="lengthVal">16</span></label>
+                    <input type="range" id="lengthRange" min="8" max="64" value="16">
+                </div>
+
+                <div class="options-grid">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="numbersToggle" checked>
+                        <span class="checkmark"></span>
+                        Numbers
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="symbolsToggle" checked>
+                        <span class="checkmark"></span>
+                        Symbols
+                    </label>
+                </div>
+
+                <button id="generateBtn" class="primary-btn">Generate Secure Password</button>
+            </section>
+
+            <section class="check-section">
+                <h3>Test Your Own</h3>
+                <input type="password" id="customCheckInput" placeholder="Paste a password to check strength...">
+                <div id="feedbackList" class="feedback-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Generated passwords are never stored on our servers.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
