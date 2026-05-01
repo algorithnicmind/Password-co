@@ -4,7 +4,7 @@
 
 ShieldGen is a high-performance, full-stack web application designed for generating cryptographically secure passwords and analyzing password strength. Built with a focus on security best practices and modern aesthetics.
 
-## 🚀 Key Features
+## ðŸš€ Key Features
 
 - **Cryptographic Randomness:** Uses Python's `secrets` module for industry-standard security.
 - **Real-time Strength Analysis:** Instant feedback on password entropy and complexity.
@@ -12,29 +12,29 @@ ShieldGen is a high-performance, full-stack web application designed for generat
 - **Zero-Trust Architecture:** Passwords are never logged or stored on the server.
 - **Responsive Design:** Works seamlessly across desktop and mobile devices.
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
 - **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Python)
 - **Frontend:** HTML5, Vanilla CSS3 (Custom Design), JavaScript (ES6+)
 - **Cryptography:** Python `secrets` library
 - **Documentation:** Automatic Swagger UI generation
 
-## 📂 Project Structure
+## ðŸ“‚ Project Structure
 
 ```text
 Password-co/
-├── backend/                # FastAPI Application
-│   ├── core/               # Business logic (Generation & Strength algorithms)
-│   ├── main.py             # API routes and CORS configuration
-│   └── requirements.txt    # Python dependencies
-├── frontend/               # Web Interface
-│   ├── index.html          # UI structure
-│   ├── style.css           # Custom Glassmorphic design
-│   └── script.js           # Frontend logic & API communication
-└── .gitignore              # Version control exclusions
+â”œâ”€â”€ backend/                # FastAPI Application
+â”‚   â”œâ”€â”€ core/               # Business logic (Generation & Strength algorithms)
+â”‚   â”œâ”€â”€ main.py             # API routes and CORS configuration
+â”‚   â””â”€â”€ requirements.txt    # Python dependencies
+â”œâ”€â”€ frontend/               # Web Interface
+â”‚   â”œâ”€â”€ index.html          # UI structure
+â”‚   â”œâ”€â”€ style.css           # Custom Glassmorphic design
+â”‚   â””â”€â”€ script.js           # Frontend logic & API communication
+â””â”€â”€ .gitignore              # Version control exclusions
 ```
 
-## 🔄 System Flow
+## ðŸ”„ System Flow
 
 ```mermaid
 sequenceDiagram
@@ -53,7 +53,7 @@ sequenceDiagram
     F->>U: Updates UI (Glassmorphic Card)
 ```
 
-## ⚙️ Getting Started
+## âš™ï¸ Getting Started
 
 ### 1. Prerequisites
 
@@ -74,10 +74,10 @@ python main.py
 
 Simply open `frontend/index.html` in your browser, or use the VS Code **Live Server** extension for the best experience.
 
-## 🔒 Security
+## ðŸ”’ Security
 
 ShieldGen follows the principle of "Zero Knowledge." All generation logic occurs on the server using cryptographically secure random number generators (CSPRNG), and the data is wiped from memory as soon as the response is sent. No databases or logs are used to store user input.
 
-## 📄 License
+## ðŸ“„ License
 
 This project is open-source and available under the [MIT License](LICENSE).
