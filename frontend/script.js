@@ -8,7 +8,6 @@ const lengthRange = document.getElementById('lengthRange');
 const lengthVal = document.getElementById('lengthVal');
 const numbersToggle = document.getElementById('numbersToggle');
 const symbolsToggle = document.getElementById('symbolsToggle');
-const strengthBar = document.getElementById('strengthBar');
 const strengthText = document.getElementById('strengthText');
 const customCheckInput = document.getElementById('customCheckInput');
 const feedbackList = document.getElementById('feedbackList');
@@ -16,7 +15,7 @@ const feedbackList = document.getElementById('feedbackList');
 // --- Helper Functions ---
 
 const updateStrengthUI = (strengthInfo) => {
-    const { strength, score } = strengthInfo;
+    const { strength } = strengthInfo;
     
     // Set colors based on strength
     let color = "#94a3b8"; // Muted
