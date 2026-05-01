@@ -34,6 +34,25 @@ Password-co/
 └── .gitignore              # Version control exclusions
 ```
 
+## 🔄 System Flow
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant F as Frontend (JS)
+    participant B as Backend (FastAPI)
+    participant L as Logic (Python Core)
+
+    U->>F: Clicks "Generate"
+    F->>B: GET /api/generate (Length, Options)
+    B->>L: Request Secure Randomness
+    L-->>B: Returns Password String
+    B->>L: Request Strength Score
+    L-->>B: Returns Score & Feedback
+    B-->>F: JSON (Password + Strength)
+    F->>U: Updates UI (Glassmorphic Card)
+```
+
 ## ⚙️ Getting Started
 
 ### 1. Prerequisites
